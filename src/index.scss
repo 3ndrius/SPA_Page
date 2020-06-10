@@ -1,0 +1,23 @@
+@import "./style/colors.scss";
+@import "./style/fonts.scss";
+@import "./style/button.scss";
+@import "../node_modules/sal.js/dist/sal.css";
+
+html {
+}
+body {
+  font-family: $default-font;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  font-size: $default-size;
+  font-weight: $default-weight;
+  color: $clr-first-01;
+  background: $main-clr;
+}
+@import "./style/main.scss";
+@import "./style/subpage.scss";

@@ -1,0 +1,209 @@
+.about{
+    position: relative;
+    .brief{
+        height: 800px;
+    }
+    .header{
+        background: url('../assets/img/oneone.jpg') no-repeat ;
+        background-size: cover;
+        height: 400px;
+        width:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0px;
+        h1{
+            text-align: center;
+            font-size:5em;
+            padding-top: 100px;
+        }
+    }
+}
+
+.products{
+    height: 100%;
+    .span{
+        max-width: 1200px;
+        margin:0 auto;
+        padding-top: 50px;
+       
+    }
+   
+    .header{
+        background: url('../assets/img/three.jpg') no-repeat ;
+        background-size: cover;
+        height: 550px;
+        width:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+        h1{
+            text-align: center;
+            font-size:5em;
+            padding-top: 50px;
+        }
+    }
+    &__container {
+        max-width: 1200px;
+        margin:0 auto;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-rows: auto;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+
+
+        .box{
+           
+            overflow: hidden;
+            padding: 10px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.6s ease-in-out;
+            opacity: 1;
+
+            img{
+                height: 380px;
+                width: auto; 
+                
+            }
+        .info{
+            position: absolute;
+            left:0;right: 0; 
+            margin: 0 auto;
+            padding: 20px;
+            z-index: 10;
+            color: white;
+            opacity: 1;
+            transition: all 0.6s ease-in-out;
+            font-weight: $fw-02;
+            line-height: 28px;
+            text-align: center;
+        }
+        &::before{
+            position: absolute;
+            height: 95%;
+            width: 100%;
+            content: '';
+            background: rgba(10, 78, 50, 0.658);
+            z-index: 5;
+            transition: all 0.6s ease-in-out;
+        }
+        &:hover::before{
+            opacity: 0;
+        }
+        &:hover .info{
+            opacity: 0;
+        }
+        }
+
+    
+    }
+}
+
+.contacts{
+    &-content{
+        height: 100%;
+        margin: 0 auto;
+        max-width: 1200px;
+        padding:200px 10px 0px;
+        
+       
+        }
+        a{
+            color:black;
+        }
+    &-wrapper{
+            display: flex;  
+            justify-content: space-between;
+            flex-direction: column;
+            margin:10px;
+    }
+    &-left{
+        max-width: 800px;
+        width: 100%;
+        display: flex;
+        flex-direction:column;
+        margin-right: 20px;
+    .message{
+        height: 200px;
+        border: 1px solid #f0e9ff;
+                 border-radius: 5px;
+                 background: transparent;
+                 margin-bottom: 20px;
+                 padding-left: 10px;
+                 padding-top:10px;
+                 font-size: 1em;
+                 font-family: $second-font;
+    }
+    .input{
+        border: 1px solid #f0e9ff;
+        border-radius: 5px;
+        height: 48px;
+        font-size: 13px;
+        background: transparent;
+        margin-bottom: 20px;
+        padding-left: 10px;
+        font-family: $second-font;
+    }
+    &__control{
+        max-width: 800px;
+        max-width: 100%;
+        justify-content: center;
+        flex-direction: row;
+     
+    }
+    .email{
+       flex:1;
+       max-width:388px;
+       width: calc(100% - 5px);
+    }
+    .name{
+        flex:1;
+        max-width:378px;
+        width: calc(100% - 5px);
+        margin-right: 10px;
+        
+    }
+        
+    }      
+      
+    &-right{
+        max-width: 300px;
+        width: 100%;
+        padding-left:50px;
+        box-sizing: border-box;
+    }      
+}
+    
+
+    .maps{
+        height: 400px;
+        max-width: 1000px;
+        overflow: hidden;
+        margin:0 auto;
+      img{
+          width: 100%;
+      }
+    }
+
+
+@media(min-width:768px){
+  .products__container{
+      .box{
+         
+      }
+  }
+  .contacts{
+    
+    &-wrapper{
+            
+            flex-direction:row;
+           
+    }   
+    }
+}
