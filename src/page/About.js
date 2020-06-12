@@ -6,7 +6,7 @@ import {motion } from 'framer-motion'
 
 const About = () => {
   return (
-    <motion.div className="about" exit={{ opactiy: 0}} animate={{opacity:1}}>
+    <motion.div className="about" exit={{ opactiy: 0}} animate={{opacity:1}}  initial={{ opacity: 0}}>
       <Navbar />
       <div className="header">
         <h1>About</h1>

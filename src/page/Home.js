@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 export default class Home extends Component {
   render() {
     return (
-      <motion.div exit={{ opactiy: 0}} animate={{opacity:1}}>
+      <motion.div exit={{ opactiy: 0}} animate={{opacity:1}}  initial={{ opacity: 0}}>
         <section className="intro">
           <div className="left"></div>
           <div className="right"></div>

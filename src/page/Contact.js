@@ -5,7 +5,7 @@ import SimpleMap from "./../components/Map";
 import {motion } from 'framer-motion'
 const Contact = () => {
   return (
-    <motion.div className="contacts" exit={{ opactiy: 0}} animate={{opacity:1}}>
+    <motion.div className="contacts" exit={{ opactiy: 0}} animate={{opacity:1}} initial={{ opacity: 0}}>
       <Navbar/>
       <div className="contacts-content">
         <div className="maps">
