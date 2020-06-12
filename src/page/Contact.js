@@ -2,10 +2,10 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "./../components/Footer";
 import SimpleMap from "./../components/Map";
-
+import {motion } from 'framer-motion'
 const Contact = () => {
   return (
-    <div className="contacts">
+    <motion.div className="contacts" exit={{ opactiy: 0}} animate={{opacity:1}}>
       <Navbar/>
       <div className="contacts-content">
         <div className="maps">
@@ -61,7 +61,7 @@ const Contact = () => {
         </div>
       </div>
       <Footer />
-    </div>
+    </motion.div>
   );
 };
 

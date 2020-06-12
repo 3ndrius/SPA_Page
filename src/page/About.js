@@ -2,17 +2,18 @@ import React from "react";
 import Navbar from "./../components/Navbar";
 import Footer from "../components/Footer";
 import Brief from "../components/Brief";
+import {motion } from 'framer-motion'
 
 const About = () => {
   return (
-    <div className="about">
+    <motion.div className="about" exit={{ opactiy: 0}} animate={{opacity:1}}>
       <Navbar />
       <div className="header">
         <h1>About</h1>
       </div>
       <Brief visable={false} />
       <Footer />
-    </div>
+    </motion.div>
   );
 };
 

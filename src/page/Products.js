@@ -6,10 +6,10 @@ import One from "../assets/img/one.jpg";
 import Two from "../assets/img/two.jpg";
 import Three from "../assets/img/three.jpg";
 import Four from "../assets/img/four.jpg";
-
+import {motion } from 'framer-motion'
 const Products = () => {
   return (
-    <div className="products">
+    <motion.div className="products" exit={{ opactiy: 0}} animate={{opacity:1}}>
       <Navbar />
       <div className="header">
         <h1>Lorem, ipsum dolor.</h1>
@@ -63,7 +63,7 @@ const Products = () => {
         </div>
       </div>
       <Footer />
-    </div>
+    </motion.div>
   );
 };
 

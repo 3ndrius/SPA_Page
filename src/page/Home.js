@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Navbar from "../components/Navbar";
 import Button from "../components/Button";
-
+import {motion } from 'framer-motion'
 import Footer from "../components/Footer";
 import Brief from "../components/Brief";
 import Offer from "../components/Offer";
@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 export default class Home extends Component {
   render() {
     return (
-      <>
+      <motion.div exit={{ opactiy: 0}} animate={{opacity:1}}>
         <section className="intro">
           <div className="left"></div>
           <div className="right"></div>
@@ -90,7 +90,7 @@ export default class Home extends Component {
         <Offer />
 
         <Footer />
-      </>
+      </motion.div>
     );
   }
 }
