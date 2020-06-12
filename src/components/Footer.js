@@ -8,12 +8,13 @@ const Footer = () => {
            <div className="part">
                <h2>About</h2>
                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum voluptates debitis provident molestiae esse, quia temporibus veritatis accusamus architecto sint natus consequuntur?</p>
-               <img src="" alt="footer-logo"/>
+               <span>Sample</span>
            </div>
            <div className="part"><h2>Contact</h2>
            <ul>
-               <li>
+               <li> 
                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quaerat dolor harum?
+
                </li>
                <li>Phone: 78254625</li>
                <li>Email: email@email.com</li>
