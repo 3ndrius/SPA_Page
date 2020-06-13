@@ -26,10 +26,9 @@ export default class Home extends Component {
             </div>
             <h5>Lorem ipsum dolor sit amet.</h5>
             <h1>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Laboriosam?
+              Lorem ipsum dolor sit, amet consea ctetur adipi sicing elit.
             </h1>
-            <p>Lorem ipsum dolor sit ametaliquam ut ipsa, nesciunt libero?</p>
+            <p>Lorem ipsum dolor sit ametal iquam ut ipsa, nesciunt libero?</p>
 
             <Link to="/products">
               {" "}
